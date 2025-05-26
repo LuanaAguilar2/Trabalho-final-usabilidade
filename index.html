@@ -3,13 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz</title>
+    <title>Quiz de tecnologia</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!--imagem principal-->
+    <img id="ti"  src="./imagens/tecnologia.png" alt="imagem de ti">
+
+    <!--div para pegar o nome do jogador-->
+    <div id="login-screen">
+        <h2>Bem-vindo ao Quiz de Tecnologia!</h2>
+        <input type="text" id="player-name-input" placeholder="Digite seu nome" required>
+        <button id="start-quiz-button">Iniciar Quiz</button>
+        <p id="error-message" class="text-sm">Por favor, digite seu nome para começar!</p>
+    </div>
+
+    <!--div principal do quiz-->
     <section id="quiz" aria-live="polite"></section>
+    
+    <!--Mostra as bolinhas dos niveis-->
     <div class="tooltip" id="tooltip" role="tooltip" aria-hidden="true"></div>
 
-    <script src="script.js"></script>
+    
+    <script src="index.js"></script>
 </body>
 </html>
